@@ -35,4 +35,6 @@ publish the bounding box it detects.
 5. Run container `docker run  --volume $(pwd):/root/ros/detection/ -it node-detection` (don't wrap it in a Makefile, which potentially
 may mismount the volume)
 
-6. Ta Da!
+6. If you wanna take advantages of GPU, please also wrap it up with `nvidia-docker` (too easy and I don't wanna explain in here)
+
+7. Ta Da!

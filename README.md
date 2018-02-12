@@ -19,9 +19,9 @@ I set up a base node and some example nodes including:
 
 # Todos
 
-- [ ] Adding example nodes
+- [X] Adding example nodes
 
-- [ ] Wrap up with nvidia-docker
+- [X] Wrap up with nvidia-docker
 
 - [ ] Wrap up with Kubernetes and AWS/GCloud launch file
 

@@ -22,7 +22,7 @@ publish the bounding box it detects.
 
 - [X] Docker
 
-### Deployment
+# Deployment
 
 1. Clone this project (detection, not entire project) into the instance you plan to deploy
 
@@ -38,3 +38,8 @@ may mismount the volume)
 6. If you wanna take advantages of GPU, please also wrap it up with `nvidia-docker` (too easy and I don't wanna explain in here)
 
 7. Ta Da!
+
+
+# Model
+
+Please refer to [my another repo](https://github.com/KleinYuan/tf-object-detection) for more models inferences.

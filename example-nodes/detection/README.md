@@ -28,6 +28,11 @@ publish the bounding box it detects.
 
 2. Run `bash ./download_models.sh` to download the example frozen inference graph
 
-3. Build docker image `make build`
+3. Modify Dockerfile: replace `${ROS_IP}` with your cluster/instance IP and `${ROS_CORE_NODE_HOSTNAME}` with ROS CORE node IP
 
-4. Run container `make run`
+4. Build docker image `make build`
+
+5. Run container `docker run  --volume $(pwd):/root/ros/detection/ -it node-detection` (don't wrap it in a Makefile, which potentially
+may mismount the volume)
+
+6. Ta Da!

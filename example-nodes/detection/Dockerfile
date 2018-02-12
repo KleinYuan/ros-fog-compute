@@ -16,4 +16,4 @@ ENV ROS_IP=${ROS_IP}
 ENV ROS_MASTER_URI=http://$(ROS_CORE_NODE_HOSTNAME):11311
 ENV PYTHONPATH=.
 
-#ENTRYPOINT ["python", "app/app.py"]
+ENTRYPOINT ["python", "app/app.py"]

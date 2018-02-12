@@ -8,13 +8,13 @@ edge nodes and master node.
 
 I set up a base node and some example nodes including:
 
-- [X] Classification
+- [ ] Classification
 
 - [X] Detection
 
-- [X] Segmentation
+- [ ] Segmentation
 
-- [X] Image to text
+- [ ] Image to text
 
 
 # Todos

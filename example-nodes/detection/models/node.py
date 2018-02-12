@@ -3,6 +3,7 @@
 import rospy
 from abc import abstractmethod
 from sensor_msgs.msg import Image
+from std_msgs.msg import String
 from config.config import node as config
 
 
@@ -12,7 +13,7 @@ class BaseNode(object):
         rospy.init_node(self.node_name, anonymous=False)
         self.pub_topic = config['pub_topic']
         self.sub_topic = config['sub_topic']
-        self.pub = rospy.Publisher(self.pub_topic, Image, queue_size=config['queue_size'])
+        self.pub = rospy.Publisher(self.pub_topic, String, queue_size=config['queue_size'])
         self.sub = rospy.Subscriber(self.sub_topic, Image, lambda m: self._sub_cb(m))
         self.in_process = False
 
